@@ -12,11 +12,13 @@ _A list of my commonly used Git commands_
 
 --
 ### Updating your remote Origin (PUSH and FETCH)
-git remote set-url origin  https://username:password@myrepository.biz/file.git 
+| Command | Description |
+| git remote set-url origin  https://username:password@myrepository.biz/file.git | update the git remote origin push and fetch |
+| git remote -v | check remote origin | 
 
 and if your password or username contain @ replace it with %40
 
-Then check git remote -v
+ 
 
 ### Getting & Creating Projects
 
