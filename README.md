@@ -12,9 +12,8 @@ _A list of my commonly used Git commands_
 
 --
 ### Updating your remote Origin (PUSH and FETCH)
-| Command | Description |
-| git remote set-url origin  https://username:password@myrepository.biz/file.git | update the git remote origin push and fetch |
-| git remote -v | check remote origin | 
+git remote set-url origin  https://username:password@myrepository.biz/file.git  - update the git remote origin push and fetch 
+git remote -v - check remote origin
 
 and if your password or username contain @ replace it with %40
 
