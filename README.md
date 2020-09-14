@@ -11,6 +11,12 @@ _A list of my commonly used Git commands_
 *If you are interested in my Git aliases, have a look at my `.bash_profile`, found here: https://github.com/joshnh/bash_profile/blob/master/.bash_profile*
 
 --
+### Updating your remote Origin (PUSH and FETCH)
+git remote set-url origin  https://username:password@myrepository.biz/file.git 
+
+and if your password or username contain @ replace it with %40
+
+Then check git remote -v
 
 ### Getting & Creating Projects
 
