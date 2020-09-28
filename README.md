@@ -17,6 +17,9 @@ git remote -v - check remote origin
 
 and if your password or username contain @ replace it with %40
 
+### Resolve the “fatal: refusing to merge unrelated histories” Git error -
+git pull origin master --allow-unrelated-histories
+
  
 
 ### Getting & Creating Projects
