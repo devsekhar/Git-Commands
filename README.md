@@ -12,13 +12,13 @@ _A list of my commonly used Git commands_
 
 --
 ### Updating your remote Origin (PUSH and FETCH)
-git remote set-url origin  https://username:password@myrepository.biz/file.git  - update the git remote origin push and fetch 
-git remote -v - check remote origin
+`git remote set-url origin  https://username:password@myrepository.biz/file.git`  - update the git remote origin push and fetch 
+`git remote -v - check remote origin`
 
 and if your password or username contain @ replace it with %40
 
 ### Resolve the “fatal: refusing to merge unrelated histories” GIT Error -
-git pull origin master --allow-unrelated-histories
+`git pull origin master --allow-unrelated-histories`
 
  
 
@@ -58,6 +58,22 @@ git pull origin master --allow-unrelated-histories
 | `git merge [source branch] [target branch]` | Merge a branch into a target branch |
 | `git stash` | Stash changes in a dirty working directory |
 | `git stash clear` | Remove all stashed entries |
+
+
+### How to merge the branch changes to your current working branch
+
+| `git checkout {{target branch to be merged}}` |
+| `git pull origin {{target branch to be merged}}` |
+| `git checkout {{Current working branch}}` |
+| `git merge {{target branch to be merged}}  --no-ff` |
+| `git push origin {{Current working branch}}` |
+
+### Usually If myself work a very long time on one task, and there are a lot of commits with some unimportant comments so I do this 
+### from {{target branch to be merged}} branch I create a new branch
+| `git checkout -b {{ final branch}}` |
+| `git merge --squash {{ your old working branch where we worked long time}} ` |
+| `git commit -m "DOing this or that..." ` |
+
 
 ### Sharing & Updating Projects
 
