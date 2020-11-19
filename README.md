@@ -61,15 +61,18 @@ and if your password or username contain @ replace it with %40
 
 
 ### How to merge the branch changes to your current working branch
-
-| `git checkout {{target branch to be merged}}` |  Checkout to base branch |
+| Command | Description |
+| ------- | ----------- |
+| `git checkout {{target branch to be merged}}` | Checkout to base branch |
 | `git pull origin {{target branch to be merged}}` | Pull the changes |
-| `git checkout {{Current working branch}}` |  Again checkout to the working feature branch where we were working |
+| `git checkout {{Current working branch}}` | Again checkout to the working feature branch where we were working |
 | `git merge {{target branch to be merged}}  --no-ff` | Merging the target base branch changes to the feature working branch |
 | `git push origin {{Current working branch}}` | Pushing the changes to the origin server |
 
 ### Usually If myself work a very long time on one task, and there are a lot of commits with some unimportant comments so I do this 
 ### from {{target branch to be merged}} branch I create a new branch with single commit
+| Command | Description |
+| ------- | ----------- |
 | `git checkout -b {{ final branch}}` | Create a new final branch from the base branch  |
 | `git merge --squash {{ your old working branch where we worked long time}} ` | merging old branch into the newly created branch with clear GIT history |
 | `git commit -m "DOing this or that..." ` | Doing the final commit |
