@@ -1,9 +1,5 @@
 Git Commands
 ============
-
-## Translated Versions
-- [Versão em português](READMEpt.md)
-
 ___
 
 _A list of my commonly used Git commands_
@@ -12,13 +8,17 @@ _A list of my commonly used Git commands_
 
 --
 ### Updating your remote Origin (PUSH and FETCH)
-`git remote set-url origin  https://username:password@myrepository.biz/file.git`  - update the git remote origin push and fetch 
-`git remote -v - check remote origin`
+| Command | Description |
+| ------- | ----------- |
+| `git remote set-url origin  https://username:password@myrepository.biz/file.git` | update the git remote origin push and fetch | 
+| `git remote -v` | check remote origin |
 
 and if your password or username contain @ replace it with %40
 
-### Resolve the “fatal: refusing to merge unrelated histories” GIT Error -
-`git pull origin master --allow-unrelated-histories`
+### Resolve the “fatal: refusing to merge unrelated histories” GIT Error 
+| Command | Description |
+| ------- | ----------- |
+| `git pull origin master --allow-unrelated-histories` | fatal: refusing to merge unrelated historie |
 
  
 
